@@ -15,7 +15,7 @@ const Cat = () => {
   useEffect(() => {
     const colorInterval = setInterval(() => {
       setColorIdx(prevNum => ++prevNum % COLORS.length);
-    }, 5000);
+    }, 6000);
     
     return () => clearInterval(colorInterval);
   },[]);
